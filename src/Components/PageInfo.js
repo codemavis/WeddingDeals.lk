@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 export default function PageInfo(props) {
     return (
         <div>
-            <div class="page-top-info">
-                <div class="container">
+            <div className="page-top-info">
+                <div className="container">
                     <h4>{props.pageName}</h4>
-                    <div class="site-pagination">
-                        <Link to=""><a>Home</a></Link> / <Link to={props.pageLink}><a>{props.pageName}</a></Link>
+                    <div className="site-pagination">
+                        <Link to="">Home</Link> / <Link to={props.pageLink}>{props.pageName}</Link>
                     </div>
                 </div>
             </div>
